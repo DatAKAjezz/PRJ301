@@ -6,11 +6,61 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>prj301</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/svg+xml" href='public/logo2.jpg' />
     </head>
+
     <body>
-        <div>guthib</div>
+        <style>
+        *{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: black;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flag{
+            z-index: 20;
+            width: 300px;
+            height: 200px;
+            background-color:#ff0000;
+            position: absolute;
+            top: 50%;   
+            left: 50%;
+            animation-name: flag-animation;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .star{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: #fdea02;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            clip-path: polygon(50% 0% , 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        @keyframes flag-animation{
+            from{
+                transform: rotateY(0deg)
+            }
+            to{
+                transform: rotateY(180deg)
+            }
+        }
+    </style>
+        
+        <div class="flag">
+            <div class="star"></div>
+        </div>
+        <h3 style="color: white;  z-index: 10; position: absolute; font-family: 'JetBrains Mono'; bottom: -700px; left: 550px">THẮNG TRẬN NÀY, 3 ĐỜI SAU THÁI LAN CÒN SỢ!</h3>
     </body>
+
 </html>
