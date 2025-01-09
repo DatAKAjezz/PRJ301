@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Register Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -22,17 +22,17 @@ and open the template in the editor.
 
                 <tr>
                     <td>Email: </td>
-                    <td><input type = 'text'></td>
+                    <td><input type = 'text' id = 'email' name = 'email'></td>
                 </tr>
 
                 <tr>
                     <td>Password: </td>
-                    <td><input type = 'password'></td>
+                    <td><input type = 'password' id = 'password' name = 'password'></td>
                 </tr>                
 
                 <tr>
                     <td>Confirm_password: </td>
-                    <td><input type = 'password'></td>
+                    <td><input id ='confirm_password' name ='confirm_password' type = 'password'></td>
                 </tr>
 
                 <tr>
@@ -40,7 +40,7 @@ and open the template in the editor.
                 </tr>
 
                 <tr>
-                    <td>Fullname: </td>
+                    <td>Full Name: </td>
                     <td >
                         <input type = 'radio' name ='gender' value = 'Male' id = 'male'><label for = 'male'>Male</label><br/>
                         <input type = 'radio' name ='gender' value = 'Female' id = 'female'><label for='female'>Female</label>
@@ -49,17 +49,33 @@ and open the template in the editor.
 
                 <tr>
                     <td>Date of birth: </td>
-                    <td><input type = 'date'></td>
+                    <td>
+                        <select name = 'day' id = 'day'>
+                            <option value="0" selected = 'selected'>0</option>
+                            <option value="1">09</option>
+
+                        </select>
+                        
+                        <select name = 'month' id = 'month'>
+                            <option value="0" selected = 'selected'>0</option>
+                            <option value="1">01</option>
+                        </select>
+                        
+                        <select name = 'month' id = 'month'>
+                            <option value="0" selected = 'selected'>0</option>
+                            <option value="1">2025</option>
+                        </select>
+                    </td>
                 </tr>                
 
                 <tr>
                     <td>Mobile: </td>
-                    <td><input type = 'tel'></td>
+                    <td><input type = 'tel' id = 'tel' name = 'tel'></td>
                 </tr>
 
                 <tr>
                     <td>Avatar: </td>
-                    <td><input type = 'file'></td>
+                    <td><input type = 'file' id = 'file' name = 'file'></td>
                 </tr>
 
                 <tr>
@@ -69,10 +85,10 @@ and open the template in the editor.
                 <tr>
                     <td>Country: </td>
                     <td >
-                        <select>
-                            <option>VietNam</option>
-                            <option>Ohio</option>
-                            <option>Brazil</option>
+                        <select name = 'country' id = 'country'>
+                            <option value="0" selected = 'selected'>VietNam</option>
+                            <option value="1">Hot Pot</option>
+                            <option value="2">Brazil</option>
                         </select>
 
                     </td>
@@ -81,8 +97,8 @@ and open the template in the editor.
                 <tr>
                     <td>City: </td>
                     <td >
-                        <select>
-                            <option>HCM</option>
+                        <select id="city" name = 'city'>
+                            <option>Ho Chi Minh</option>
                             <option>Ha Noi</option>
                             <option>Da Nang</option>
                         </select>
@@ -93,7 +109,7 @@ and open the template in the editor.
                 <tr>
                     <td>District: </td>
                     <td >
-                        <select>
+                        <select name = 'district' id = 'district'>
                             <option>Thu Duc</option>
                             <option>Quan 9</option>
                             <option>Quan 1</option>
@@ -104,7 +120,7 @@ and open the template in the editor.
 
                 <tr>
                     <td>Home address: </td>
-                    <td><textarea></textarea></td>
+                    <td><textarea id = 'home_address' name = 'home_address'></textarea></td>
                 </tr>
 
                 <tr>
