@@ -11,11 +11,14 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        a = <input type ="text" name="txtA"/>
-        b = <input type ="text" name="txtB"/>
-        <input type = "radio" name = "op" value = "+"/> + <br/>
-        <input type = "radio" name = "op" value = "+"/> + <br/>
-        <input type = "radio" name = "op" value = "+"/> + <br/>
-        <input type = "radio" name = "op" value = "+"/> + <br/>
+        <form action="CalculatorServlet" method = "GET">
+            a = <input type ="text" name="txtA"/><br/>
+            b = <input type ="text" name="txtB"/><br/>
+            <input type = "radio" name = "op" value = "+"/> + <br/>
+            <input type = "radio" name = "op" value = "-"/> - <br/>
+            <input type = "radio" name = "op" value = "*"/> * <br/>
+            <input type = "radio" name = "op" value = "/"/> / <br/>
+            <button type="submit" value = "Tinh ket qua"></button>
+        </form>
     </body>
 </html>
